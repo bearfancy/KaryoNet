@@ -164,6 +164,8 @@ class ResNet(nn.Module):
         xc = self.transformer(xc.unsqueeze(0),chrompair1[:,:,0])
         xp = self.fc1_(xp)
         xc = self.fc1(xc)
+        
+        '''DAM'''
         #x = self.softmax_func(x)
         xc = xc.unsqueeze(0)
         #print()
@@ -201,8 +203,6 @@ class ResNet(nn.Module):
         tag_space = self.hidden2tag_3(tag_space).view(-1, xc.size(0))
         tag_space = tag_space.view(xc.size(1), xc.size(2), -1).permute(2, 0, 1).squeeze(0).contiguous()
         #print(tag_space.shape)
-
-
         return tag_space, xp, chrompair1
 
 def resnet50(args, **kwargs):

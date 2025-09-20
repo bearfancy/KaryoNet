@@ -53,7 +53,7 @@ def main(args):
     torch.backends.cudnn.deterministic = True
 
     if args.model=='resnet50_MFIM' or args.model=='resnet50_MFIM_DAM':
-        detr_checkpoint = torch.load('./model/pretrain/detr-r50-e632a11.pth', map_location='cpu')
+        detr_checkpoint = torch.load('/home/wy/projects/染色体极性分类/KaryoNet/model/pretrain/detr-r50-e632da11.pth', map_location='cpu')
         names={'transformer.encoder.layers.0.self_attn.in_proj_weight', 'transformer.encoder.layers.0.self_attn.in_proj_bias', 'transformer.encoder.layers.0.self_attn.out_proj.weight', 'transformer.encoder.layers.0.self_attn.out_proj.bias', 'transformer.encoder.layers.0.linear1.weight', 'transformer.encoder.layers.0.linear1.bias', 'transformer.encoder.layers.0.linear2.weight', 'transformer.encoder.layers.0.linear2.bias', 'transformer.encoder.layers.0.norm1.weight', 'transformer.encoder.layers.0.norm1.bias', 'transformer.encoder.layers.0.norm2.weight', 'transformer.encoder.layers.0.norm2.bias', 'transformer.encoder.layers.1.self_attn.in_proj_weight', 'transformer.encoder.layers.1.self_attn.in_proj_bias', 'transformer.encoder.layers.1.self_attn.out_proj.weight', 'transformer.encoder.layers.1.self_attn.out_proj.bias', 'transformer.encoder.layers.1.linear1.weight', 'transformer.encoder.layers.1.linear1.bias', 'transformer.encoder.layers.1.linear2.weight', 'transformer.encoder.layers.1.linear2.bias', 'transformer.encoder.layers.1.norm1.weight', 'transformer.encoder.layers.1.norm1.bias', 'transformer.encoder.layers.1.norm2.weight', 'transformer.encoder.layers.1.norm2.bias', 'transformer.encoder.layers.2.self_attn.in_proj_weight', 'transformer.encoder.layers.2.self_attn.in_proj_bias', 'transformer.encoder.layers.2.self_attn.out_proj.weight', 'transformer.encoder.layers.2.self_attn.out_proj.bias', 'transformer.encoder.layers.2.linear1.weight', 'transformer.encoder.layers.2.linear1.bias', 'transformer.encoder.layers.2.linear2.weight', 'transformer.encoder.layers.2.linear2.bias', 'transformer.encoder.layers.2.norm1.weight', 'transformer.encoder.layers.2.norm1.bias', 'transformer.encoder.layers.2.norm2.weight', 'transformer.encoder.layers.2.norm2.bias'}
         transformer_checkpoint = {key:detr_checkpoint['model'][key] for key in detr_checkpoint['model'].keys() & names}
         if args.model=='resnet50_MFIM':
@@ -74,6 +74,7 @@ def main(args):
             model=pretrain(model)
 
     model = model.to(device)
+    print(model)
     cost = nn.CrossEntropyLoss().to(device)
     nllcost = nn.NLLLoss().to(device)
     BCEcost = nn.BCELoss(reduction='mean').to(device)
@@ -101,6 +102,8 @@ def main(args):
         if epoch==args.lr_reduce_time:
             adjust_learning_rate(optimizer, epoch, args.lr_reduce_time, reduced)
             reduced=1
+            
+        # 随机选择性别
         sex=random.randint(0,100)%2
         variationed=0
         variation=random.randint(0,100)
@@ -108,6 +111,8 @@ def main(args):
             namelist=copy.copy(normalboy)
         else:
             namelist=copy.copy(normalgirl)
+            
+        # 数据增强策略: 随机添加或删除某些染色体类型来增加数据多样性
         if variationed==0 and variation%3==0:# +8
             namelist.append(7)
             variationed=1
@@ -127,36 +132,47 @@ def main(args):
             namelist.append(20)
             variationed=1
         
+        # 构建批次图片路径
         for i in namelist:
             batchnames.append(os.path.join(rootdir,dirlist[i],random.choice(lists[i]))) ##load the data to form a batch
         random.shuffle(batchnames)
         
-        img_tensors = torch.empty(len(namelist), 3, 224, 224)
-        labelpair = torch.empty(len(namelist),len(namelist))
-        pola_tensors = torch.empty(len(namelist))
-        labellist=[]
-        labelgrouplist=[]
+        # 预分配tensor空间
+        img_tensors = torch.empty(len(namelist), 3, 224, 224)  # 图片数据
+        labelpair = torch.empty(len(namelist),len(namelist))   # 配对标签
+        pola_tensors = torch.empty(len(namelist))              # 极性标签
+        labellist=[]                                           # 类别标签列表
+        labelgrouplist=[]                                      # 组别标签列表
+        
         i=0
         for img_path in batchnames:
+            # 提取极性信息
             imgnum=len(img_path.split('/')[-1].split('_'))
             if imgnum==7:
-                pola_tensors[i]=1
+                pola_tensors[i]=1 # 7个字段=极性1
             if imgnum==6:
-                pola_tensors[i]=0
-            data = Image.open(img_path)
-            data = mytransforms(data)
-            img_tensors[i,:,:,:] = data
-            filelabel=int(img_path.split('/')[-1].split('_')[4])-1
+                pola_tensors[i]=0 # 6个字段=极性0
+            
+            # 加载和预处理图片
+            data = Image.open(img_path) # 使用PIL加载图片
+            data = mytransforms(data) # 应用数据变换
+            img_tensors[i,:,:,:] = data # 存储到tensor中
+            
+            # 提取类别标签
+            filelabel=int(img_path.split('/')[-1].split('_')[4])-1 # 染色体类别标签
             labellist.append(float(filelabel))
             labelgrouplist.append(float(label2list[filelabel]))
             i=i+1
+        
+        # 生成染色体配对关系矩阵
         for i in range(len(labellist)):
             for j in range(len(labellist)):
                 if label2list[int(labellist[i])]==label2list[int(labellist[j])]:
-                    labelpair[i,j]=1
+                    labelpair[i,j]=1 # 同组染色体
                 else:
-                    labelpair[i,j]=0
+                    labelpair[i,j]=0 # 不同组染色体
         
+        # 转换为PyTorch tensor: 类别标签、配对标签、极性标签
         label_tensors = torch.from_numpy(np.array(labellist)).long()
         #labelgroup_tensors = torch.from_numpy(np.array(labelgrouplist)).long()
         images = img_tensors.to(device)
@@ -164,6 +180,7 @@ def main(args):
         labelpairs = labelpair.to(device)
         polalabels = pola_tensors.long().to(device)
         #labelgroups = labelgroup_tensors.to(device)
+        
         if args.model=='resnet50' or args.model=='resnet50_DAM':
             outputs,polaout = model(images)
             lossmain = cost(outputs, labels)
