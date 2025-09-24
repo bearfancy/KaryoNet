@@ -16,10 +16,44 @@ import argparse
 import numpy as np
 import copy
 from toolkit.dataread import read_data
+import logging
+from datetime import datetime
 
 # Device configuration
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+os.environ["CUDA_VISIBLE_DEVICES"] = "6"
+device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
+
+def setup_logging_and_directories(args):
+    """设置日志记录和创建必要的目录"""
+    # 创建时间戳
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    
+    # 创建workdir下的实验文件夹
+    experiment_name = f"{args.model_name}_{timestamp}"
+    workdir = os.path.join(args.workdir, experiment_name)
+    
+    # 创建目录
+    os.makedirs(workdir, exist_ok=True)
+    os.makedirs(os.path.join(workdir, 'logs'), exist_ok=True)
+    os.makedirs(os.path.join(workdir, 'models'), exist_ok=True)
+    
+    # 设置日志记录
+    log_file = os.path.join(workdir, 'logs', 'training.log')
+    
+    # 配置日志格式
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file, encoding='utf-8'),
+            logging.StreamHandler()  # 同时输出到控制台
+        ]
+    )
+    
+    # 更新模型保存路径
+    args.model_path = os.path.join(workdir, 'models')
+    
+    return workdir, log_file
 
 def adjust_learning_rate(optimizer, epoch, reducetime, reduced):
     if epoch==reducetime and reduced==0:
@@ -74,7 +108,7 @@ def main(args):
             model=pretrain(model)
 
     model = model.to(device)
-    print(model)
+    logging.info(f"模型结构:\n{model}")
     cost = nn.CrossEntropyLoss().to(device)
     nllcost = nn.NLLLoss().to(device)
     BCEcost = nn.BCELoss(reduction='mean').to(device)
@@ -94,13 +128,37 @@ def main(args):
     valcasenames, lists, dirlist, normalboy, normalgirl = read_data(rootdir=rootdir,rootdirval=rootdirval)
     reduced=0
     label2list=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1]
-    print('start training')
+    
+    # 打印训练配置信息
+    logging.info(f"\n{'='*80}")
+    logging.info(f"🚀 开始训练 - {args.model}")
+    logging.info(f"{'='*80}")
+    logging.info(f"📊 数据集信息:")
+    logging.info(f"  训练集路径: {rootdir}")
+    logging.info(f"  验证集路径: {rootdirval}")
+    logging.info(f"  验证集细胞数: {len(valcasenames)}")
+    logging.info(f"  训练集染色体类型数: {len(lists)}")
+    total_train_images = sum(len(file_list) for file_list in lists)
+    logging.info(f"  训练集总图片数: {total_train_images:,}")
+    logging.info(f"\n🔧 训练配置:")
+    logging.info(f"  模型: {args.model}")
+    logging.info(f"  染色体类别数: {args.num_class}")
+    logging.info(f"  极性类别数: 4 (0°, 90°, 180°, 270°)")
+    logging.info(f"  学习率: {args.lr}")
+    logging.info(f"  总训练轮数: {args.iteration}")
+    logging.info(f"  学习率衰减轮数: {args.lr_reduce_time}")
+    logging.info(f"  设备: {device}")
+    logging.info(f"  模型保存路径: {args.model_path}")
+    logging.info(f"{'='*80}\n")
     for epoch in range(1, args.iteration + 1):
         model.train()
         start = time.time()
         batchnames=[]
         if epoch==args.lr_reduce_time:
+            old_lr = optimizer.state_dict()['param_groups'][0]['lr']
             adjust_learning_rate(optimizer, epoch, args.lr_reduce_time, reduced)
+            new_lr = optimizer.state_dict()['param_groups'][0]['lr']
+            logging.info(f"\n📉 学习率调整: {old_lr:.6f} → {new_lr:.6f} (Epoch {epoch})")
             reduced=1
             
         # 随机选择性别
@@ -146,20 +204,22 @@ def main(args):
         
         i=0
         for img_path in batchnames:
-            # 提取极性信息
-            imgnum=len(img_path.split('/')[-1].split('_'))
-            if imgnum==7:
-                pola_tensors[i]=1 # 7个字段=极性1
-            if imgnum==6:
-                pola_tensors[i]=0 # 6个字段=极性0
+            # 新的文件命名格式：ID_核型_角度_细胞名_Karyotype.jpg
+            filename = img_path.split('/')[-1]
+            parts = filename.split('_')
+            
+            # 提取极性角度信息 (0, 90, 180, 270)
+            angle = int(parts[2])  # 第3个字段是角度
+            # 将角度映射到极性标签：0->0, 90->1, 180->2, 270->3
+            pola_tensors[i] = angle // 90
             
             # 加载和预处理图片
             data = Image.open(img_path) # 使用PIL加载图片
             data = mytransforms(data) # 应用数据变换
             img_tensors[i,:,:,:] = data # 存储到tensor中
             
-            # 提取类别标签
-            filelabel=int(img_path.split('/')[-1].split('_')[4])-1 # 染色体类别标签
+            # 提取染色体类别标签 (核型在第2个字段)
+            filelabel = int(parts[1]) - 1  # 染色体类别标签 (1-24 -> 0-23)
             labellist.append(float(filelabel))
             labelgrouplist.append(float(label2list[filelabel]))
             i=i+1
@@ -183,8 +243,8 @@ def main(args):
         
         if args.model=='resnet50' or args.model=='resnet50_DAM':
             outputs,polaout = model(images)
-            lossmain = cost(outputs, labels)
-            losspola = cost(polaout, polalabels)
+            lossmain = cost(outputs, labels) # 染色体分类损失
+            losspola = cost(polaout, polalabels) # 极性分类损失
             loss = lossmain+losspola
         elif args.model=='resnet50_MFIM' or args.model=='resnet50_MFIM_DAM':
             outputs, polaout, outputspair = model(images)
@@ -194,33 +254,66 @@ def main(args):
             loss = lossmain+0.5*losspair+losspola
 
         if epoch % 1 == 0:
-            print (epoch,loss.data,optimizer.state_dict()['param_groups'][0]['lr'])
+            # 计算各个损失分量
+            if args.model=='resnet50_DAM' or args.model=='resnet50_256d':
+                loss_main = lossmain.item()
+                loss_pola = losspola.item()
+                logging.info(f"Epoch {epoch:6d} | Total Loss: {loss.data.item():.4f} | Main Loss: {loss_main:.4f} | Pola Loss: {loss_pola:.4f} | LR: {optimizer.state_dict()['param_groups'][0]['lr']:.6f}")
+            elif args.model=='resnet50_MFIM' or args.model=='resnet50_MFIM_DAM':
+                loss_main = lossmain.item()
+                loss_pola = losspola.item()
+                loss_pair = losspair.item()
+                logging.info(f"Epoch {epoch:6d} | Total Loss: {loss.data.item():.4f} | Main Loss: {loss_main:.4f} | Pola Loss: {loss_pola:.4f} | Pair Loss: {loss_pair:.4f} | LR: {optimizer.state_dict()['param_groups'][0]['lr']:.6f}")
+            else:
+                logging.info(f"Epoch {epoch:6d} | Loss: {loss.data.item():.4f} | LR: {optimizer.state_dict()['param_groups'][0]['lr']:.6f}")
+        
+        # 每1000个epoch显示进度
+        if epoch % 1000 == 0:
+            progress = epoch / args.iteration * 100
+            logging.info(f"\n📊 训练进度: {epoch}/{args.iteration} ({progress:.1f}%) | 当前最佳准确率: {bestacc:.4f}")
 
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
 
         if epoch % 4000 == 0:
+            logging.info(f"\n{'='*80}")
+            logging.info(f"Epoch {epoch} - 开始验证...")
+            logging.info(f"{'='*80}")
+            
             torch.save(model, os.path.join(args.model_path, '%s-%d.pth' % (args.model_name, epoch)))
             model.eval()
             num=0
             correctnum=0
             correctpolanum=0
-            for case in valcasenames:
+            total_cases = len(valcasenames)
+            for case_idx, case in enumerate(valcasenames):
+                if case_idx % 50 == 0:  # 每50个细胞显示一次进度
+                    logging.info(f"验证进度: {case_idx+1}/{total_cases} ({100*(case_idx+1)/total_cases:.1f}%)")
+                
                 root1=os.path.join(rootdirval,case)
                 img_list1=os.listdir(root1)
                 allprob=[]
                 labels=[]
                 polalabels=[]
-                img_tensors = torch.empty(46, 3, 224, 224)
+                
+                # 动态创建tensor，根据实际图片数量
+                num_images = len(img_list1)
+                img_tensors = torch.empty(num_images, 3, 224, 224)
+                
                 casei=0
                 for img1 in img_list1:
                     data = Image.open(os.path.join(root1, img1))
                     data = mytransforms(data)
                     img_tensors[casei,:,:,:] = data
-                    label=int(img1.split('_')[1])
+                    
+                    # 新的文件命名格式：ID_核型_角度_细胞名_Karyotype.jpg
+                    parts = img1.split('_')
+                    label = int(parts[1]) - 1  # 核型在第2个字段 (1-24 -> 0-23)
+                    angle = int(parts[2])  # 角度在第3个字段
+                    
                     labels.append(label)
-                    polalabels.append(0)
+                    polalabels.append(angle // 90)  # 将角度映射到极性标签
                     casei=casei+1
                     num=num+1
                 images = img_tensors.to(device)
@@ -229,15 +322,44 @@ def main(args):
                 else:
                     outputs, _ = model(images)
                 _, predicted = torch.max(outputs.data, 1)
-                for pred in range(predicted.shape[0]):
-                    if predicted[pred]+1==labels[pred]:
+                
+                # # 调试信息：检查长度匹配
+                # logging.info(f"  预测结果长度: {predicted.shape[0]}, 标签长度: {len(labels)}")
+                # logging.info(f"  预测值范围: {predicted.min().item()}-{predicted.max().item()}")
+                # logging.info(f"  标签值范围: {min(labels)}-{max(labels)}")
+                
+                # 确保长度匹配
+                min_len = min(predicted.shape[0], len(labels))
+                for pred in range(min_len):
+                    if predicted[pred] == labels[pred]:  # 现在都是0-23范围，直接比较
                         correctnum=correctnum+1
+            
             acc=correctnum / num
-            print("Acc: %.4f" % acc)
-            model.train()
+            logging.info(f"\n验证结果:")
+            logging.info(f"  总图片数: {num}")
+            logging.info(f"  正确分类数: {correctnum}")
+            logging.info(f"  染色体分类准确率: {acc:.4f} ({acc*100:.2f}%)")
+            logging.info(f"  当前最佳准确率: {bestacc:.4f} ({bestacc*100:.2f}%)")
+            
             if acc>=bestacc:
+                logging.info(f"  🎉 新的最佳模型！准确率提升: {bestacc:.4f} → {acc:.4f}")
                 torch.save(model, os.path.join(args.model_path, '%s-best.pth' % args.model_name))
                 bestacc=acc
+            else:
+                logging.info(f"  📈 准确率未提升，当前最佳: {bestacc:.4f}")
+            
+            logging.info(f"{'='*80}\n")
+            model.train()
+    
+    # 训练结束
+    logging.info(f"\n{'='*80}")
+    logging.info(f"🏁 训练完成！")
+    logging.info(f"{'='*80}")
+    logging.info(f"📈 最终结果:")
+    logging.info(f"  最佳准确率: {bestacc:.4f} ({bestacc*100:.2f}%)")
+    logging.info(f"  最佳模型已保存: {args.model_path}/{args.model_name}-best.pth")
+    logging.info(f"  最终模型已保存: {args.model_path}/{args.model_name}-{args.iteration}.pth")
+    logging.info(f"{'='*80}\n")
 
 
 if __name__=='__main__':
@@ -249,10 +371,11 @@ if __name__=='__main__':
     parser.add_argument("--batch_size", default=46, type=int)
     parser.add_argument("--model_name", default='model-resnet50_MFIM_DAM', type=str)
     parser.add_argument("--model_path", default='./model', type=str)
+    parser.add_argument("--workdir", default='./experiments', type=str, help='工作目录，用于保存日志和模型')
     parser.add_argument("--pretrained", default=True, type=bool)
     parser.add_argument("--pretrained_model", default='./model/pretrain/resnet50-19c8e357.pth', type=str)
-    parser.add_argument("--rootdir", default='dataset/Gband/train/', type=str)
-    parser.add_argument("--rootdirval", default='dataset/Gband/val/', type=str)
+    parser.add_argument("--rootdir", default='dataset/JBM_G_category_dataset250922/train/', type=str)
+    parser.add_argument("--rootdirval", default='dataset/JBM_G_category_dataset250922/val/', type=str)
     parser.add_argument("--model", default='resnet50_MFIM_DAM', type=str)
     parser.add_argument('--enc_layers', default=3, type=int)
     parser.add_argument('--dec_layers', default=6, type=int)
@@ -264,4 +387,15 @@ if __name__=='__main__':
     parser.add_argument('--seed', default=42, type=int)
     parser.add_argument('--pre_norm', action='store_true')
     args = parser.parse_args()
+    
+    # 设置日志记录和创建目录
+    workdir, log_file = setup_logging_and_directories(args)
+    
+    # 打印实验信息
+    print(f"🔧 实验配置:")
+    print(f"  实验文件夹: {workdir}")
+    print(f"  日志文件: {log_file}")
+    print(f"  模型保存路径: {args.model_path}")
+    print(f"{'='*80}\n")
+    
     main(args)

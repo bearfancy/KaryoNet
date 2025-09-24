@@ -1,0 +1,2703 @@
+{
+  "karyotype_accuracy": 0.6248866913885456,
+  "karyotype_total_samples": 12135,
+  "karyotype_total_correct": 7583,
+  "polarity_accuracy": 0.8973217964565307,
+  "polarity_total_samples": 12135,
+  "polarity_total_correct": 10889,
+  "pair_accuracy": 0.7536052740008241,
+  "pair_total_samples": 12135,
+  "pair_total_correct": 9145,
+  "case_results": [
+    {
+      "case": "1DFJNdbzxbTbuivU",
+      "total_images": 46,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.8913043478260869,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "1GtEz4emt6tKGGYZ",
+      "total_images": 46,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7391304347826086,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "1gMZwPUvrsnP2U1K",
+      "total_images": 45,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6444444444444445,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8222222222222222,
+      "pair_accuracy": 0.7777777777777778
+    },
+    {
+      "case": "1rtyJX86caZ7bWuS",
+      "total_images": 46,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6739130434782609,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "2Gy4rEc1Vh8WCB9Y",
+      "total_images": 45,
+      "karyotype_correct": 14,
+      "karyotype_accuracy": 0.3111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8444444444444444,
+      "pair_accuracy": 0.6888888888888889
+    },
+    {
+      "case": "2d7AMfyrr42ymzcg",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "2jqETQUTbVUKVzPf",
+      "total_images": 43,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7906976744186046,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9767441860465116,
+      "pair_accuracy": 0.7674418604651163
+    },
+    {
+      "case": "37pKUK7sKQwGjcE8",
+      "total_images": 46,
+      "karyotype_correct": 43,
+      "karyotype_accuracy": 0.9347826086956522,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "3WNxrUDq11NHXXLd",
+      "total_images": 45,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8666666666666667,
+      "pair_accuracy": 0.7777777777777778
+    },
+    {
+      "case": "3Zv4wAS8XFeyxmvx",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "3ofeTiFa6dtbXeoq",
+      "total_images": 47,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5106382978723404,
+      "polarity_valid_samples": 47,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.851063829787234,
+      "pair_accuracy": 0.7021276595744681
+    },
+    {
+      "case": "3pjmC2WCYPvVFUgD",
+      "total_images": 45,
+      "karyotype_correct": 23,
+      "karyotype_accuracy": 0.5111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.7333333333333333
+    },
+    {
+      "case": "429MmCraBodXguct",
+      "total_images": 46,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.4782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.5652173913043478
+    },
+    {
+      "case": "4G4cxRVXj331C36S",
+      "total_images": 46,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7608695652173914,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "4XSyUL4nV7dvcwn4",
+      "total_images": 46,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6739130434782609,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.6956521739130435
+    },
+    {
+      "case": "57ZRpv1Dom8jWa21",
+      "total_images": 43,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6976744186046512,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9302325581395349,
+      "pair_accuracy": 0.7674418604651163
+    },
+    {
+      "case": "5Ci7iwEHHCCHhLZu",
+      "total_images": 41,
+      "karyotype_correct": 21,
+      "karyotype_accuracy": 0.5121951219512195,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.975609756097561,
+      "pair_accuracy": 0.6829268292682927
+    },
+    {
+      "case": "5M5krY8YMGeRKAuu",
+      "total_images": 40,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.9,
+      "polarity_valid_samples": 40,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.925,
+      "pair_accuracy": 0.925
+    },
+    {
+      "case": "5buNdwQ73mH8MQpd",
+      "total_images": 47,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6595744680851063,
+      "polarity_valid_samples": 47,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8297872340425532,
+      "pair_accuracy": 0.7021276595744681
+    },
+    {
+      "case": "5cCf93ujnrH7v7y8",
+      "total_images": 45,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.7333333333333333,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9333333333333333,
+      "pair_accuracy": 0.7333333333333333
+    },
+    {
+      "case": "5gExbmTRRX6khZ8D",
+      "total_images": 40,
+      "karyotype_correct": 23,
+      "karyotype_accuracy": 0.575,
+      "polarity_valid_samples": 40,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.85,
+      "pair_accuracy": 0.75
+    },
+    {
+      "case": "5guwBHygGVg4wgrY",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8043478260869565,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "6uLg3gKQSUmMsJc5",
+      "total_images": 41,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8780487804878049,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 41,
+      "polarity_accuracy": 1.0,
+      "pair_accuracy": 0.9512195121951219
+    },
+    {
+      "case": "6v3qfZx3N8CDXLoL",
+      "total_images": 45,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.4888888888888889,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.5777777777777777
+    },
+    {
+      "case": "73rimXvYA1yRqhuM",
+      "total_images": 45,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.9111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9777777777777777,
+      "pair_accuracy": 0.8
+    },
+    {
+      "case": "7RPmWZUn72j6C5eQ",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "7Y2t6nuWs98ZhzPv",
+      "total_images": 41,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.6341463414634146,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.9024390243902439,
+      "pair_accuracy": 0.7560975609756098
+    },
+    {
+      "case": "7ykMwQT5tssYcYHz",
+      "total_images": 45,
+      "karyotype_correct": 5,
+      "karyotype_accuracy": 0.1111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.6666666666666666
+    },
+    {
+      "case": "8rPZM4dEGwHYKuKe",
+      "total_images": 41,
+      "karyotype_correct": 3,
+      "karyotype_accuracy": 0.07317073170731707,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.8292682926829268,
+      "pair_accuracy": 0.4878048780487805
+    },
+    {
+      "case": "93aJnwTPCfFCHvFg",
+      "total_images": 46,
+      "karyotype_correct": 45,
+      "karyotype_accuracy": 0.9782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.9347826086956522
+    },
+    {
+      "case": "9Fe8uNHwDTVkha4Q",
+      "total_images": 46,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6086956521739131,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8260869565217391,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "9GdGqN5pPfRqathf",
+      "total_images": 44,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7727272727272727,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8863636363636364,
+      "pair_accuracy": 0.8863636363636364
+    },
+    {
+      "case": "9VtuqhRCFPbGFyQF",
+      "total_images": 41,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5853658536585366,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.9024390243902439,
+      "pair_accuracy": 0.6097560975609756
+    },
+    {
+      "case": "9bQDu9RYd2XbYA7t",
+      "total_images": 41,
+      "karyotype_correct": 18,
+      "karyotype_accuracy": 0.43902439024390244,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 32,
+      "polarity_accuracy": 0.7804878048780488,
+      "pair_accuracy": 0.7317073170731707
+    },
+    {
+      "case": "9hnBXmtTBrqCiJRH",
+      "total_images": 46,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8043478260869565,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "AXc3bY3WFFkMQ2Z3",
+      "total_images": 42,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8571428571428571,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 42,
+      "polarity_accuracy": 1.0,
+      "pair_accuracy": 0.9047619047619048
+    },
+    {
+      "case": "Ao6yVdcfmxE1DP8R",
+      "total_images": 42,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.9523809523809523,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 42,
+      "polarity_accuracy": 1.0,
+      "pair_accuracy": 1.0
+    },
+    {
+      "case": "AvwS23kfDrDvkfSP",
+      "total_images": 42,
+      "karyotype_correct": 17,
+      "karyotype_accuracy": 0.40476190476190477,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.8333333333333334,
+      "pair_accuracy": 0.6904761904761905
+    },
+    {
+      "case": "Ayx4CnCQfcj4Yk2p",
+      "total_images": 46,
+      "karyotype_correct": 17,
+      "karyotype_accuracy": 0.3695652173913043,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8260869565217391,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "B3YtHKzuBQnVpsz4",
+      "total_images": 49,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.6530612244897959,
+      "polarity_valid_samples": 49,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.8979591836734694,
+      "pair_accuracy": 0.8163265306122449
+    },
+    {
+      "case": "BKfeptNJUxsaxSEt",
+      "total_images": 45,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.7333333333333333
+    },
+    {
+      "case": "Bm41sU3qbxVzJux3",
+      "total_images": 44,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9318181818181818,
+      "pair_accuracy": 0.7727272727272727
+    },
+    {
+      "case": "Bpy6fTzh1DZGJ199",
+      "total_images": 44,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8636363636363636,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.7954545454545454,
+      "pair_accuracy": 0.8863636363636364
+    },
+    {
+      "case": "Br9rtx8d9CpmR2Qp",
+      "total_images": 45,
+      "karyotype_correct": 23,
+      "karyotype_accuracy": 0.5111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.7111111111111111
+    },
+    {
+      "case": "C2gLR1m7hF4euFvv",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.717391304347826
+    },
+    {
+      "case": "DR61txu7y4ajccXZ",
+      "total_images": 44,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.6136363636363636,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8863636363636364,
+      "pair_accuracy": 0.6818181818181818
+    },
+    {
+      "case": "Dh4uzrtFYN1rmpQj",
+      "total_images": 45,
+      "karyotype_correct": 18,
+      "karyotype_accuracy": 0.4,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8444444444444444,
+      "pair_accuracy": 0.5111111111111111
+    },
+    {
+      "case": "DrVTiN5ixpu5SXRw",
+      "total_images": 46,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6739130434782609,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.6739130434782609
+    },
+    {
+      "case": "DsPCfYVf3Wkf3Zbc",
+      "total_images": 46,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6521739130434783,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "E9x52y4kNTSmXwWd",
+      "total_images": 44,
+      "karyotype_correct": 18,
+      "karyotype_accuracy": 0.4090909090909091,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8409090909090909,
+      "pair_accuracy": 0.6363636363636364
+    },
+    {
+      "case": "EA27aYbPA8vV8iDb",
+      "total_images": 44,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9090909090909091,
+      "pair_accuracy": 0.5454545454545454
+    },
+    {
+      "case": "EJXMiqetSmMoryJS",
+      "total_images": 46,
+      "karyotype_correct": 42,
+      "karyotype_accuracy": 0.9130434782608695,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "ExfRGLMERXv2wXCe",
+      "total_images": 45,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8444444444444444,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9777777777777777,
+      "pair_accuracy": 0.6888888888888889
+    },
+    {
+      "case": "FCTGLLnxXrAM7VoJ",
+      "total_images": 45,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6888888888888889,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.6
+    },
+    {
+      "case": "FMo6pAVqRB7xfUc6",
+      "total_images": 39,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.8717948717948718,
+      "polarity_valid_samples": 39,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.8717948717948718,
+      "pair_accuracy": 0.9487179487179487
+    },
+    {
+      "case": "FN6FrqQPQHnYAEmM",
+      "total_images": 43,
+      "karyotype_correct": 15,
+      "karyotype_accuracy": 0.3488372093023256,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 32,
+      "polarity_accuracy": 0.7441860465116279,
+      "pair_accuracy": 0.6511627906976745
+    },
+    {
+      "case": "Fqw5jfcvy1QJXujk",
+      "total_images": 35,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.7428571428571429,
+      "polarity_valid_samples": 35,
+      "polarity_correct": 29,
+      "polarity_accuracy": 0.8285714285714286,
+      "pair_accuracy": 0.7142857142857143
+    },
+    {
+      "case": "FsRwAvvc5aHTEWmk",
+      "total_images": 44,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.9318181818181818,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9318181818181818,
+      "pair_accuracy": 0.9772727272727273
+    },
+    {
+      "case": "Fsfk5FLkPQXu5urm",
+      "total_images": 45,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.9111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9333333333333333,
+      "pair_accuracy": 0.9555555555555556
+    },
+    {
+      "case": "G2VFixUDPosG63EW",
+      "total_images": 46,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.5652173913043478,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.5652173913043478
+    },
+    {
+      "case": "GWNFe3yCa2TgEVZ7",
+      "total_images": 46,
+      "karyotype_correct": 13,
+      "karyotype_accuracy": 0.2826086956521739,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.6956521739130435
+    },
+    {
+      "case": "GcwTRyTYjVepSSwu",
+      "total_images": 35,
+      "karyotype_correct": 3,
+      "karyotype_accuracy": 0.08571428571428572,
+      "polarity_valid_samples": 35,
+      "polarity_correct": 28,
+      "polarity_accuracy": 0.8,
+      "pair_accuracy": 0.4857142857142857
+    },
+    {
+      "case": "HapFfA2VnrADAYje",
+      "total_images": 46,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7608695652173914,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "Hqv52haUgMzxBLLz",
+      "total_images": 45,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6666666666666666,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.7555555555555555
+    },
+    {
+      "case": "HzxF28tdNBjRBsHJ",
+      "total_images": 46,
+      "karyotype_correct": 23,
+      "karyotype_accuracy": 0.5,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.717391304347826
+    },
+    {
+      "case": "J89T6yRGcJV2UThL",
+      "total_images": 45,
+      "karyotype_correct": 18,
+      "karyotype_accuracy": 0.4,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8444444444444444,
+      "pair_accuracy": 0.5333333333333333
+    },
+    {
+      "case": "JQPWqfxr5spQ62gh",
+      "total_images": 41,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5853658536585366,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 31,
+      "polarity_accuracy": 0.7560975609756098,
+      "pair_accuracy": 0.7317073170731707
+    },
+    {
+      "case": "JhJdiXqRtUhp1m6K",
+      "total_images": 43,
+      "karyotype_correct": 20,
+      "karyotype_accuracy": 0.46511627906976744,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.813953488372093,
+      "pair_accuracy": 0.7674418604651163
+    },
+    {
+      "case": "Jq82TttrrsPFxTa5",
+      "total_images": 47,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6170212765957447,
+      "polarity_valid_samples": 47,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8723404255319149,
+      "pair_accuracy": 0.7446808510638298
+    },
+    {
+      "case": "K7eqWYokYJn6Wirs",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "KC8NjjmcLmAD1oka",
+      "total_images": 43,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.9069767441860465,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.9069767441860465,
+      "pair_accuracy": 0.9534883720930233
+    },
+    {
+      "case": "KJEkXqKaJytqZwUH",
+      "total_images": 45,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8222222222222222,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.9333333333333333
+    },
+    {
+      "case": "KMDgW6akfBgsCqV9",
+      "total_images": 44,
+      "karyotype_correct": 21,
+      "karyotype_accuracy": 0.4772727272727273,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9545454545454546,
+      "pair_accuracy": 0.6363636363636364
+    },
+    {
+      "case": "Kmd7EB5yDNEwA1Ww",
+      "total_images": 46,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8043478260869565,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.7391304347826086
+    },
+    {
+      "case": "L2h2ofw8bJvjpwSg",
+      "total_images": 45,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7777777777777778,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.7555555555555555
+    },
+    {
+      "case": "L8beWFnt2iiEXy7R",
+      "total_images": 44,
+      "karyotype_correct": 14,
+      "karyotype_accuracy": 0.3181818181818182,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9090909090909091,
+      "pair_accuracy": 0.6363636363636364
+    },
+    {
+      "case": "LANBwP6hf9cxZxLL",
+      "total_images": 46,
+      "karyotype_correct": 11,
+      "karyotype_accuracy": 0.2391304347826087,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.5434782608695652
+    },
+    {
+      "case": "LHSy3cM5F86HXbjV",
+      "total_images": 43,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5116279069767442,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8604651162790697,
+      "pair_accuracy": 0.7209302325581395
+    },
+    {
+      "case": "LUK2iU1r5nV9xcug",
+      "total_images": 41,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.8292682926829268,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.975609756097561,
+      "pair_accuracy": 0.8292682926829268
+    },
+    {
+      "case": "M2oUAj5MH27mfiRz",
+      "total_images": 90,
+      "karyotype_correct": 49,
+      "karyotype_accuracy": 0.5444444444444444,
+      "polarity_valid_samples": 90,
+      "polarity_correct": 80,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.7666666666666667
+    },
+    {
+      "case": "M8yPwsq7aMhD7p2A",
+      "total_images": 46,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6086956521739131,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 32,
+      "polarity_accuracy": 0.6956521739130435,
+      "pair_accuracy": 0.6956521739130435
+    },
+    {
+      "case": "MBkt18taYgKDYjAH",
+      "total_images": 47,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.7021276595744681,
+      "polarity_valid_samples": 47,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9361702127659575,
+      "pair_accuracy": 0.8085106382978723
+    },
+    {
+      "case": "MkTxZ21vgd3xPYWt",
+      "total_images": 42,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.7857142857142857,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.9047619047619048,
+      "pair_accuracy": 0.7619047619047619
+    },
+    {
+      "case": "MqiARoSF365JvibL",
+      "total_images": 44,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8863636363636364,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8636363636363636,
+      "pair_accuracy": 0.8636363636363636
+    },
+    {
+      "case": "NFXj55Go3onQBJEZ",
+      "total_images": 44,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7727272727272727,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9318181818181818,
+      "pair_accuracy": 0.8636363636363636
+    },
+    {
+      "case": "NJmxppfpPQGXXePE",
+      "total_images": 44,
+      "karyotype_correct": 4,
+      "karyotype_accuracy": 0.09090909090909091,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8636363636363636,
+      "pair_accuracy": 0.6818181818181818
+    },
+    {
+      "case": "NT4h6TU676BZCdKQ",
+      "total_images": 43,
+      "karyotype_correct": 21,
+      "karyotype_accuracy": 0.4883720930232558,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.813953488372093,
+      "pair_accuracy": 0.6976744186046512
+    },
+    {
+      "case": "Nnk5Lp1TLDZBE3aV",
+      "total_images": 43,
+      "karyotype_correct": 18,
+      "karyotype_accuracy": 0.4186046511627907,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8837209302325582,
+      "pair_accuracy": 0.7209302325581395
+    },
+    {
+      "case": "NpmvQawqVnfHqP4n",
+      "total_images": 43,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8604651162790697,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9534883720930233,
+      "pair_accuracy": 0.813953488372093
+    },
+    {
+      "case": "NvnzpSzEzbdC69aY",
+      "total_images": 46,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6739130434782609,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.6739130434782609
+    },
+    {
+      "case": "Pc93QUCFxzJQapXA",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "PiQALBJToxZ4chpJ",
+      "total_images": 45,
+      "karyotype_correct": 4,
+      "karyotype_accuracy": 0.08888888888888889,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.5555555555555556
+    },
+    {
+      "case": "Pybr3n6rWfquhAuM",
+      "total_images": 46,
+      "karyotype_correct": 16,
+      "karyotype_accuracy": 0.34782608695652173,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8260869565217391,
+      "pair_accuracy": 0.6304347826086957
+    },
+    {
+      "case": "Q9QvwjnahCkPbtnE",
+      "total_images": 42,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.7380952380952381,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 42,
+      "polarity_accuracy": 1.0,
+      "pair_accuracy": 0.8095238095238095
+    },
+    {
+      "case": "QVc9wuBksauEi1mm",
+      "total_images": 46,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.4782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "QYdFVzRCdP8MRKUn",
+      "total_images": 44,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6363636363636364,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 36,
+      "polarity_accuracy": 0.8181818181818182,
+      "pair_accuracy": 0.7727272727272727
+    },
+    {
+      "case": "QymtMBmW3i2kGKXM",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "QzponJoUHVUrrmW2",
+      "total_images": 46,
+      "karyotype_correct": 3,
+      "karyotype_accuracy": 0.06521739130434782,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.5434782608695652
+    },
+    {
+      "case": "RQe2Qg5D266jWzwR",
+      "total_images": 44,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5454545454545454,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8409090909090909,
+      "pair_accuracy": 0.75
+    },
+    {
+      "case": "RWp8yUmEpkdUpGjT",
+      "total_images": 46,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7391304347826086,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "RYbJZVZunv8j7zfu",
+      "total_images": 46,
+      "karyotype_correct": 2,
+      "karyotype_accuracy": 0.043478260869565216,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "Rcf8Suryg8veDNCo",
+      "total_images": 41,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5853658536585366,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.975609756097561,
+      "pair_accuracy": 0.7073170731707317
+    },
+    {
+      "case": "Rgujaa38LYhXPrVW",
+      "total_images": 42,
+      "karyotype_correct": 23,
+      "karyotype_accuracy": 0.5476190476190477,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 42,
+      "polarity_accuracy": 1.0,
+      "pair_accuracy": 0.6428571428571429
+    },
+    {
+      "case": "RhqEPAtq4GgRjReV",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "RkWoHQpsNxp5jsAE",
+      "total_images": 46,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5217391304347826,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.5869565217391305
+    },
+    {
+      "case": "S3j5FBwAhHnD7pb5",
+      "total_images": 46,
+      "karyotype_correct": 6,
+      "karyotype_accuracy": 0.13043478260869565,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8043478260869565,
+      "pair_accuracy": 0.6086956521739131
+    },
+    {
+      "case": "S4JsVh5kd42Yn94B",
+      "total_images": 44,
+      "karyotype_correct": 4,
+      "karyotype_accuracy": 0.09090909090909091,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8636363636363636,
+      "pair_accuracy": 0.5681818181818182
+    },
+    {
+      "case": "S8qwQxdFE5MCJkQt",
+      "total_images": 45,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8222222222222222,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8444444444444444,
+      "pair_accuracy": 0.8222222222222222
+    },
+    {
+      "case": "SH3eAqpiFGFgULQp",
+      "total_images": 46,
+      "karyotype_correct": 13,
+      "karyotype_accuracy": 0.2826086956521739,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.5652173913043478
+    },
+    {
+      "case": "SZSWC3VtiNckDcmi",
+      "total_images": 44,
+      "karyotype_correct": 17,
+      "karyotype_accuracy": 0.38636363636363635,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9090909090909091,
+      "pair_accuracy": 0.6363636363636364
+    },
+    {
+      "case": "SmiFRyq97ZaTzw4N",
+      "total_images": 46,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.6956521739130435,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "Sz9R1n14N8N8fwTM",
+      "total_images": 46,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.717391304347826,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "SzgW4P1dNiEcu5NM",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "T8NkJ2c3VKrGV8XS",
+      "total_images": 45,
+      "karyotype_correct": 42,
+      "karyotype_accuracy": 0.9333333333333333,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9777777777777777,
+      "pair_accuracy": 0.9333333333333333
+    },
+    {
+      "case": "TXRAe8qDR8X9m1jy",
+      "total_images": 42,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.4523809523809524,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.8333333333333334,
+      "pair_accuracy": 0.6190476190476191
+    },
+    {
+      "case": "TfiF17iE7wDTXQ4o",
+      "total_images": 46,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7391304347826086,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "TidYWBQbnSUekDTV",
+      "total_images": 43,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5116279069767442,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9534883720930233,
+      "pair_accuracy": 0.7441860465116279
+    },
+    {
+      "case": "TmwHA2xchMiJGxVN",
+      "total_images": 44,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8636363636363636,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9772727272727273,
+      "pair_accuracy": 0.9090909090909091
+    },
+    {
+      "case": "Tofy6QXjTVkKc4dy",
+      "total_images": 46,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7608695652173914,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "TqfqPJZ1XNrd7EBV",
+      "total_images": 23,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 23,
+      "polarity_correct": 20,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 1.0
+    },
+    {
+      "case": "U37oXWcNQsXXb7Yy",
+      "total_images": 43,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.9534883720930233,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9767441860465116,
+      "pair_accuracy": 0.9069767441860465
+    },
+    {
+      "case": "UZ8ydR2PKaTdKsxS",
+      "total_images": 46,
+      "karyotype_correct": 42,
+      "karyotype_accuracy": 0.9130434782608695,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "VNSrm8RGrJSA7d98",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "VQaPGWY3pSkrPLrS",
+      "total_images": 46,
+      "karyotype_correct": 20,
+      "karyotype_accuracy": 0.43478260869565216,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.6521739130434783
+    },
+    {
+      "case": "VnkMkJx9gakoQ6tQ",
+      "total_images": 46,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5434782608695652,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.6521739130434783
+    },
+    {
+      "case": "W7E4MLXur7jLpxNH",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.9130434782608695
+    },
+    {
+      "case": "WF9AwXf9hMDgXs8P",
+      "total_images": 46,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7608695652173914,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "WUJaxg1nW2gEdshq",
+      "total_images": 46,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.717391304347826,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.717391304347826
+    },
+    {
+      "case": "WcGH5dGAFsq4A3Cv",
+      "total_images": 45,
+      "karyotype_correct": 44,
+      "karyotype_accuracy": 0.9777777777777777,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.9555555555555556
+    },
+    {
+      "case": "WySvE6vLEEwK2ybB",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "X6BnGmJ7y25xM7AV",
+      "total_images": 46,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7608695652173914,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "X8akxftdeay7AA6a",
+      "total_images": 46,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.5869565217391305,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.7608695652173914
+    },
+    {
+      "case": "XDtyrykKV2nmvjhY",
+      "total_images": 45,
+      "karyotype_correct": 14,
+      "karyotype_accuracy": 0.3111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.6222222222222222
+    },
+    {
+      "case": "XHjA5uqfzqg2kmNQ",
+      "total_images": 46,
+      "karyotype_correct": 10,
+      "karyotype_accuracy": 0.21739130434782608,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8043478260869565,
+      "pair_accuracy": 0.6086956521739131
+    },
+    {
+      "case": "XZqXVMWxR9CpWrSm",
+      "total_images": 44,
+      "karyotype_correct": 21,
+      "karyotype_accuracy": 0.4772727272727273,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9090909090909091,
+      "pair_accuracy": 0.6818181818181818
+    },
+    {
+      "case": "XjMfcmQ7A2KDjQDs",
+      "total_images": 46,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.6956521739130435,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.6304347826086957
+    },
+    {
+      "case": "YH6D4DTNRr45fUuE",
+      "total_images": 46,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.6956521739130435,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.6956521739130435
+    },
+    {
+      "case": "Yji7TS1tdYFvb2ry",
+      "total_images": 44,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8636363636363636,
+      "pair_accuracy": 0.6590909090909091
+    },
+    {
+      "case": "YkekTuf3UNCgCCYy",
+      "total_images": 44,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6590909090909091,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8636363636363636,
+      "pair_accuracy": 0.7727272727272727
+    },
+    {
+      "case": "YwLEJTWgMXxjDCux",
+      "total_images": 42,
+      "karyotype_correct": 21,
+      "karyotype_accuracy": 0.5,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.9047619047619048,
+      "pair_accuracy": 0.6904761904761905
+    },
+    {
+      "case": "Yzk7DwvLvF1UQmT4",
+      "total_images": 45,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6444444444444445,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8666666666666667,
+      "pair_accuracy": 0.8222222222222222
+    },
+    {
+      "case": "ZWQDKmbYG6qqfZXU",
+      "total_images": 46,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.8695652173913043,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.9130434782608695
+    },
+    {
+      "case": "ZXcxSgcppH49r2WX",
+      "total_images": 45,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6222222222222222,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8222222222222222,
+      "pair_accuracy": 0.8444444444444444
+    },
+    {
+      "case": "ZdtUihajWUfQjtSg",
+      "total_images": 43,
+      "karyotype_correct": 17,
+      "karyotype_accuracy": 0.3953488372093023,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.9069767441860465,
+      "pair_accuracy": 0.5813953488372093
+    },
+    {
+      "case": "ZqgXrBQ8wDPvsy7J",
+      "total_images": 45,
+      "karyotype_correct": 4,
+      "karyotype_accuracy": 0.08888888888888889,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 33,
+      "polarity_accuracy": 0.7333333333333333,
+      "pair_accuracy": 0.6
+    },
+    {
+      "case": "ZrB1tnC9N2n59z9N",
+      "total_images": 41,
+      "karyotype_correct": 20,
+      "karyotype_accuracy": 0.4878048780487805,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.8292682926829268,
+      "pair_accuracy": 0.5121951219512195
+    },
+    {
+      "case": "Zxzp8U5RbB8AE7eb",
+      "total_images": 42,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5238095238095238,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9523809523809523,
+      "pair_accuracy": 0.6190476190476191
+    },
+    {
+      "case": "aAtneoKTTFFq52Ah",
+      "total_images": 46,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.5869565217391305,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "aDDtuZiN9Uxztish",
+      "total_images": 46,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6304347826086957,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.6739130434782609
+    },
+    {
+      "case": "aFEWsts3jbV9EWEo",
+      "total_images": 46,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.7608695652173914,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "aJ99uf5V8oRbYgnA",
+      "total_images": 44,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6363636363636364,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9545454545454546,
+      "pair_accuracy": 0.6590909090909091
+    },
+    {
+      "case": "aJupAiUdYxxTAyun",
+      "total_images": 44,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6818181818181818,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9318181818181818,
+      "pair_accuracy": 0.6818181818181818
+    },
+    {
+      "case": "ad2mYkB4sN1oiTdc",
+      "total_images": 46,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.7391304347826086
+    },
+    {
+      "case": "aimHHNRYcD8C9oBP",
+      "total_images": 41,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.7560975609756098,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.9512195121951219,
+      "pair_accuracy": 0.7073170731707317
+    },
+    {
+      "case": "aqdrPT1kbUYRNGh9",
+      "total_images": 46,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "bAyKa8M2DT6TygJ8",
+      "total_images": 42,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.9285714285714286,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9761904761904762,
+      "pair_accuracy": 0.8333333333333334
+    },
+    {
+      "case": "bEynMuixfQ1cDA5h",
+      "total_images": 46,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5434782608695652,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "bKk6LjyY3avywESr",
+      "total_images": 46,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6086956521739131,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.7391304347826086
+    },
+    {
+      "case": "bNLaKweq9bR2MxhF",
+      "total_images": 46,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5434782608695652,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "bNWdryLCs8byWWuy",
+      "total_images": 46,
+      "karyotype_correct": 44,
+      "karyotype_accuracy": 0.9565217391304348,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.9565217391304348
+    },
+    {
+      "case": "bNzN3Xhq8kWEnPGk",
+      "total_images": 39,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.9487179487179487,
+      "polarity_valid_samples": 39,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.9487179487179487,
+      "pair_accuracy": 1.0
+    },
+    {
+      "case": "bT1m4KSpZUEN81Uf",
+      "total_images": 48,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.625,
+      "polarity_valid_samples": 48,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.875,
+      "pair_accuracy": 0.625
+    },
+    {
+      "case": "bfF5GUkZcdZdwGPy",
+      "total_images": 89,
+      "karyotype_correct": 53,
+      "karyotype_accuracy": 0.5955056179775281,
+      "polarity_valid_samples": 89,
+      "polarity_correct": 76,
+      "polarity_accuracy": 0.8539325842696629,
+      "pair_accuracy": 0.7528089887640449
+    },
+    {
+      "case": "bkK7ZSqya8QShVNP",
+      "total_images": 40,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.675,
+      "polarity_valid_samples": 40,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.975,
+      "pair_accuracy": 0.625
+    },
+    {
+      "case": "bnWPXDmiotkR3tTi",
+      "total_images": 45,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8444444444444444,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9333333333333333,
+      "pair_accuracy": 0.8888888888888888
+    },
+    {
+      "case": "boyLfFSqBLkn6SXR",
+      "total_images": 38,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.8157894736842105,
+      "polarity_valid_samples": 38,
+      "polarity_correct": 33,
+      "polarity_accuracy": 0.868421052631579,
+      "pair_accuracy": 0.7894736842105263
+    },
+    {
+      "case": "cJY3RQLmNwE4LuHs",
+      "total_images": 46,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6086956521739131,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.6956521739130435
+    },
+    {
+      "case": "cMD3mFkjtEbQ7Tki",
+      "total_images": 45,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5333333333333333,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.7333333333333333
+    },
+    {
+      "case": "cc4LNSinUbt1aZa6",
+      "total_images": 46,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.5652173913043478,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.6739130434782609
+    },
+    {
+      "case": "cefAQMw1V1qcfESB",
+      "total_images": 45,
+      "karyotype_correct": 42,
+      "karyotype_accuracy": 0.9333333333333333,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.9111111111111111
+    },
+    {
+      "case": "dZ5cW1xrbxQnUiB4",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "duAmj9hwfFsfGcB7",
+      "total_images": 43,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.4418604651162791,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 36,
+      "polarity_accuracy": 0.8372093023255814,
+      "pair_accuracy": 0.5813953488372093
+    },
+    {
+      "case": "ebhwshSKVbVdxKDY",
+      "total_images": 31,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.6129032258064516,
+      "polarity_valid_samples": 31,
+      "polarity_correct": 30,
+      "polarity_accuracy": 0.967741935483871,
+      "pair_accuracy": 0.7419354838709677
+    },
+    {
+      "case": "erqY2kZziM834bWY",
+      "total_images": 42,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.6190476190476191,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.8333333333333334,
+      "pair_accuracy": 0.7857142857142857
+    },
+    {
+      "case": "ev3u2HpDbAXV7PFf",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "fNFFdBwt8xXtDGaE",
+      "total_images": 40,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.675,
+      "polarity_valid_samples": 40,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.875,
+      "pair_accuracy": 0.7
+    },
+    {
+      "case": "ffykWnBzHrwzgoFM",
+      "total_images": 42,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.7619047619047619,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9761904761904762,
+      "pair_accuracy": 0.8809523809523809
+    },
+    {
+      "case": "ffzkwfLsp1mQe9V9",
+      "total_images": 45,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5555555555555556,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.6666666666666666
+    },
+    {
+      "case": "fw6xKYD4rZXL6vsL",
+      "total_images": 46,
+      "karyotype_correct": 42,
+      "karyotype_accuracy": 0.9130434782608695,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "g8EdSTeD7UPm4eGk",
+      "total_images": 46,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.717391304347826,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "gMA8ZzfbYJpFZaos",
+      "total_images": 44,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8181818181818182,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9545454545454546,
+      "pair_accuracy": 0.8181818181818182
+    },
+    {
+      "case": "gVA1vjxrkKiKoq2a",
+      "total_images": 46,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5217391304347826,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8043478260869565,
+      "pair_accuracy": 0.45652173913043476
+    },
+    {
+      "case": "gYMTPTdNPh69LBzx",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "gYi2wwvvhPow1XCr",
+      "total_images": 46,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6739130434782609,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "gZtKMhTitypsX1Tt",
+      "total_images": 46,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6304347826086957,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.6521739130434783
+    },
+    {
+      "case": "geiCKRY4DH24PvUJ",
+      "total_images": 45,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6222222222222222,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.5777777777777777
+    },
+    {
+      "case": "gzF6UJtFKupRsfwb",
+      "total_images": 46,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.8913043478260869,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.9782608695652174
+    },
+    {
+      "case": "hTnjeTxjfmDh12MG",
+      "total_images": 46,
+      "karyotype_correct": 21,
+      "karyotype_accuracy": 0.45652173913043476,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.6304347826086957
+    },
+    {
+      "case": "hcctQnXaJYqLorzm",
+      "total_images": 45,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.8888888888888888,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.8888888888888888
+    },
+    {
+      "case": "hehcgTfLCP1b2Qg4",
+      "total_images": 86,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.36046511627906974,
+      "polarity_valid_samples": 86,
+      "polarity_correct": 65,
+      "polarity_accuracy": 0.7558139534883721,
+      "pair_accuracy": 0.6162790697674418
+    },
+    {
+      "case": "hfqM7Y15117tnXqi",
+      "total_images": 41,
+      "karyotype_correct": 20,
+      "karyotype_accuracy": 0.4878048780487805,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 33,
+      "polarity_accuracy": 0.8048780487804879,
+      "pair_accuracy": 0.6829268292682927
+    },
+    {
+      "case": "hyE1mdw6QquzWXKK",
+      "total_images": 46,
+      "karyotype_correct": 44,
+      "karyotype_accuracy": 0.9565217391304348,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.9782608695652174
+    },
+    {
+      "case": "i145JsKzaejJnyVW",
+      "total_images": 43,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6976744186046512,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.9069767441860465,
+      "pair_accuracy": 0.7674418604651163
+    },
+    {
+      "case": "i3bSCTiemEgzRpsv",
+      "total_images": 46,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "iCr1aEUJsMAMW3C6",
+      "total_images": 46,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8260869565217391,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 45,
+      "polarity_accuracy": 0.9782608695652174,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "ijdT9AdMFXnJSCL9",
+      "total_images": 43,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.9302325581395349,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9302325581395349,
+      "pair_accuracy": 0.7674418604651163
+    },
+    {
+      "case": "j5BkDoksyvRsDikQ",
+      "total_images": 46,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.5869565217391305,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.6086956521739131
+    },
+    {
+      "case": "jSaMfi3qUz5nUge1",
+      "total_images": 92,
+      "karyotype_correct": 61,
+      "karyotype_accuracy": 0.6630434782608695,
+      "polarity_valid_samples": 92,
+      "polarity_correct": 85,
+      "polarity_accuracy": 0.9239130434782609,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "joPUABs4RAdnX3bj",
+      "total_images": 46,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 0.8913043478260869,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "k31cLsG1mmbqcFEy",
+      "total_images": 42,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.8333333333333334,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.9285714285714286,
+      "pair_accuracy": 0.8809523809523809
+    },
+    {
+      "case": "kABGHaKKpGD4yjxx",
+      "total_images": 46,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.5869565217391305,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.6521739130434783
+    },
+    {
+      "case": "kD5LuGncYHEwvf3a",
+      "total_images": 46,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.4782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8043478260869565,
+      "pair_accuracy": 0.7391304347826086
+    },
+    {
+      "case": "kDNTiLvofimyTaXm",
+      "total_images": 42,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.9523809523809523,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9523809523809523,
+      "pair_accuracy": 0.9285714285714286
+    },
+    {
+      "case": "kRqpcCouL929opHr",
+      "total_images": 44,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.4318181818181818,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9318181818181818,
+      "pair_accuracy": 0.6363636363636364
+    },
+    {
+      "case": "kTGp6cbHQcsEqnDW",
+      "total_images": 46,
+      "karyotype_correct": 3,
+      "karyotype_accuracy": 0.06521739130434782,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.6521739130434783
+    },
+    {
+      "case": "kjn7RRU5AgT8jbAX",
+      "total_images": 44,
+      "karyotype_correct": 1,
+      "karyotype_accuracy": 0.022727272727272728,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8636363636363636,
+      "pair_accuracy": 0.75
+    },
+    {
+      "case": "kr73ZDfHgmkoioLP",
+      "total_images": 45,
+      "karyotype_correct": 17,
+      "karyotype_accuracy": 0.37777777777777777,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 36,
+      "polarity_accuracy": 0.8,
+      "pair_accuracy": 0.6
+    },
+    {
+      "case": "nWFY8o2tEUPbxUFo",
+      "total_images": 37,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.8108108108108109,
+      "polarity_valid_samples": 37,
+      "polarity_correct": 32,
+      "polarity_accuracy": 0.8648648648648649,
+      "pair_accuracy": 0.8918918918918919
+    },
+    {
+      "case": "oHW1817T7Kxts4oq",
+      "total_images": 42,
+      "karyotype_correct": 14,
+      "karyotype_accuracy": 0.3333333333333333,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.8095238095238095,
+      "pair_accuracy": 0.6190476190476191
+    },
+    {
+      "case": "ogCj9KPHzJ3YHt6K",
+      "total_images": 43,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8372093023255814,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9302325581395349,
+      "pair_accuracy": 0.813953488372093
+    },
+    {
+      "case": "oj3jYPUMdG4mRAVg",
+      "total_images": 42,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6904761904761905,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8809523809523809,
+      "pair_accuracy": 0.7857142857142857
+    },
+    {
+      "case": "p8JQiKwLRyZVx5XJ",
+      "total_images": 42,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.9047619047619048,
+      "polarity_valid_samples": 42,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9523809523809523,
+      "pair_accuracy": 0.9523809523809523
+    },
+    {
+      "case": "p97nFw7rXUEnJNNc",
+      "total_images": 44,
+      "karyotype_correct": 3,
+      "karyotype_accuracy": 0.06818181818181818,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 36,
+      "polarity_accuracy": 0.8181818181818182,
+      "pair_accuracy": 0.5909090909090909
+    },
+    {
+      "case": "pKFbvXosCXzCAmGK",
+      "total_images": 46,
+      "karyotype_correct": 7,
+      "karyotype_accuracy": 0.15217391304347827,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.6304347826086957
+    },
+    {
+      "case": "pXf1vvkxv663jdEX",
+      "total_images": 45,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.7111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9555555555555556,
+      "pair_accuracy": 0.8222222222222222
+    },
+    {
+      "case": "pdrNygcqSDfHafb4",
+      "total_images": 40,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.675,
+      "polarity_valid_samples": 40,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.925,
+      "pair_accuracy": 0.85
+    },
+    {
+      "case": "pf4gvss42QnrEfDQ",
+      "total_images": 44,
+      "karyotype_correct": 4,
+      "karyotype_accuracy": 0.09090909090909091,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8409090909090909,
+      "pair_accuracy": 0.5454545454545454
+    },
+    {
+      "case": "ph1V3eF5mKieSEpe",
+      "total_images": 46,
+      "karyotype_correct": 2,
+      "karyotype_accuracy": 0.043478260869565216,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.5869565217391305
+    },
+    {
+      "case": "prkMibeaAfyXFyKE",
+      "total_images": 44,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8863636363636364,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9772727272727273,
+      "pair_accuracy": 0.8181818181818182
+    },
+    {
+      "case": "pxTAWwk9pV87i4GW",
+      "total_images": 46,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.8695652173913043,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "pzX5uBMT6zcQJLP2",
+      "total_images": 45,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5555555555555556,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9111111111111111,
+      "pair_accuracy": 0.7555555555555555
+    },
+    {
+      "case": "qUCVr9gjs6uD2Whp",
+      "total_images": 46,
+      "karyotype_correct": 12,
+      "karyotype_accuracy": 0.2608695652173913,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.7391304347826086,
+      "pair_accuracy": 0.717391304347826
+    },
+    {
+      "case": "qk9jhWN35JQcWZBU",
+      "total_images": 46,
+      "karyotype_correct": 27,
+      "karyotype_accuracy": 0.5869565217391305,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.6521739130434783
+    },
+    {
+      "case": "qoVokvdfD8CEQdjU",
+      "total_images": 46,
+      "karyotype_correct": 42,
+      "karyotype_accuracy": 0.9130434782608695,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.8695652173913043
+    },
+    {
+      "case": "qpkXbGNnar7nXRWk",
+      "total_images": 41,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.926829268292683,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.975609756097561,
+      "pair_accuracy": 1.0
+    },
+    {
+      "case": "r63rYC94ZFRVBm99",
+      "total_images": 45,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7555555555555555,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9333333333333333,
+      "pair_accuracy": 0.8444444444444444
+    },
+    {
+      "case": "rEXn7D4QAMkK9Y1L",
+      "total_images": 44,
+      "karyotype_correct": 24,
+      "karyotype_accuracy": 0.5454545454545454,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8863636363636364,
+      "pair_accuracy": 0.7727272727272727
+    },
+    {
+      "case": "rTszSPQUL8spXTJL",
+      "total_images": 44,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.8181818181818182,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.9318181818181818,
+      "pair_accuracy": 0.8636363636363636
+    },
+    {
+      "case": "rquT2CtZG1uQKB7u",
+      "total_images": 39,
+      "karyotype_correct": 5,
+      "karyotype_accuracy": 0.1282051282051282,
+      "polarity_valid_samples": 39,
+      "polarity_correct": 34,
+      "polarity_accuracy": 0.8717948717948718,
+      "pair_accuracy": 0.6153846153846154
+    },
+    {
+      "case": "rumdYUNZijWZ73Gu",
+      "total_images": 36,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.8611111111111112,
+      "polarity_valid_samples": 36,
+      "polarity_correct": 32,
+      "polarity_accuracy": 0.8888888888888888,
+      "pair_accuracy": 0.9444444444444444
+    },
+    {
+      "case": "s1RT3kjsHcAV2Gjn",
+      "total_images": 46,
+      "karyotype_correct": 31,
+      "karyotype_accuracy": 0.6739130434782609,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "s3SVh3qJx1qNAAh6",
+      "total_images": 46,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8043478260869565,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "s4UT3zeW16gRGjYS",
+      "total_images": 43,
+      "karyotype_correct": 35,
+      "karyotype_accuracy": 0.813953488372093,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9767441860465116,
+      "pair_accuracy": 0.8372093023255814
+    },
+    {
+      "case": "sDTk6LGSPuyQiB5p",
+      "total_images": 45,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6222222222222222,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8444444444444444,
+      "pair_accuracy": 0.7777777777777778
+    },
+    {
+      "case": "sJykbtZnFFjZs7Uf",
+      "total_images": 49,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.5306122448979592,
+      "polarity_valid_samples": 49,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.7755102040816326,
+      "pair_accuracy": 0.7959183673469388
+    },
+    {
+      "case": "sYPKLsaiL7gc934c",
+      "total_images": 41,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.4634146341463415,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.926829268292683,
+      "pair_accuracy": 0.7317073170731707
+    },
+    {
+      "case": "scDMsXB6A7cy6U3B",
+      "total_images": 41,
+      "karyotype_correct": 41,
+      "karyotype_accuracy": 1.0,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.9024390243902439,
+      "pair_accuracy": 0.9512195121951219
+    },
+    {
+      "case": "sjRfiECzr9uWChr1",
+      "total_images": 85,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.38823529411764707,
+      "polarity_valid_samples": 85,
+      "polarity_correct": 67,
+      "polarity_accuracy": 0.788235294117647,
+      "pair_accuracy": 0.5764705882352941
+    },
+    {
+      "case": "tRUWeNqAtWEbh9qB",
+      "total_images": 45,
+      "karyotype_correct": 14,
+      "karyotype_accuracy": 0.3111111111111111,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.7777777777777778,
+      "pair_accuracy": 0.6
+    },
+    {
+      "case": "tjWwtySYSrULG5rC",
+      "total_images": 43,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5813953488372093,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 37,
+      "polarity_accuracy": 0.8604651162790697,
+      "pair_accuracy": 0.6744186046511628
+    },
+    {
+      "case": "u3vAQKLZAngCEex7",
+      "total_images": 44,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.5909090909090909,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9090909090909091,
+      "pair_accuracy": 0.5909090909090909
+    },
+    {
+      "case": "u8kS4ZRJqSsrrwXH",
+      "total_images": 46,
+      "karyotype_correct": 28,
+      "karyotype_accuracy": 0.6086956521739131,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8260869565217391,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "uLm5mn46JCz5uS4d",
+      "total_images": 46,
+      "karyotype_correct": 25,
+      "karyotype_accuracy": 0.5434782608695652,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.7608695652173914
+    },
+    {
+      "case": "uMb8nA296gG9PFFZ",
+      "total_images": 46,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6521739130434783,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.7608695652173914
+    },
+    {
+      "case": "uQruw7YXs5kZ2D9F",
+      "total_images": 43,
+      "karyotype_correct": 17,
+      "karyotype_accuracy": 0.3953488372093023,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 35,
+      "polarity_accuracy": 0.813953488372093,
+      "pair_accuracy": 0.6511627906976745
+    },
+    {
+      "case": "upNU7UVdScpqEMzU",
+      "total_images": 43,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.9302325581395349,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9767441860465116,
+      "pair_accuracy": 0.9069767441860465
+    },
+    {
+      "case": "v5io6XfRR9ysXi8a",
+      "total_images": 46,
+      "karyotype_correct": 36,
+      "karyotype_accuracy": 0.782608695652174,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.8913043478260869
+    },
+    {
+      "case": "v8wFNEo7xKd8Fu65",
+      "total_images": 46,
+      "karyotype_correct": 39,
+      "karyotype_accuracy": 0.8478260869565217,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.9130434782608695
+    },
+    {
+      "case": "vRauUhRr2MDQUhCP",
+      "total_images": 43,
+      "karyotype_correct": 18,
+      "karyotype_accuracy": 0.4186046511627907,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 24,
+      "polarity_accuracy": 0.5581395348837209,
+      "pair_accuracy": 0.7209302325581395
+    },
+    {
+      "case": "vUXSsR8QBHtVEDY5",
+      "total_images": 43,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.7674418604651163,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.9302325581395349,
+      "pair_accuracy": 0.813953488372093
+    },
+    {
+      "case": "vUshfyLH5XMK2Dz6",
+      "total_images": 44,
+      "karyotype_correct": 38,
+      "karyotype_accuracy": 0.8636363636363636,
+      "polarity_valid_samples": 44,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9772727272727273,
+      "pair_accuracy": 0.7727272727272727
+    },
+    {
+      "case": "vue6mdGTGvDQ8pkx",
+      "total_images": 45,
+      "karyotype_correct": 8,
+      "karyotype_accuracy": 0.17777777777777778,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8444444444444444,
+      "pair_accuracy": 0.6222222222222222
+    },
+    {
+      "case": "w5yJKS3jztrT4C1A",
+      "total_images": 46,
+      "karyotype_correct": 30,
+      "karyotype_accuracy": 0.6521739130434783,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.782608695652174
+    },
+    {
+      "case": "wJYYmgQ1jGqr5YxT",
+      "total_images": 43,
+      "karyotype_correct": 6,
+      "karyotype_accuracy": 0.13953488372093023,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8837209302325582,
+      "pair_accuracy": 0.6046511627906976
+    },
+    {
+      "case": "wqV3thm7z4ZC2WMD",
+      "total_images": 46,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.8695652173913043,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.717391304347826
+    },
+    {
+      "case": "xEHz3EjmGAsP2Wsh",
+      "total_images": 46,
+      "karyotype_correct": 32,
+      "karyotype_accuracy": 0.6956521739130435,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.717391304347826
+    },
+    {
+      "case": "xXRGiFZdikcdA7k8",
+      "total_images": 46,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7391304347826086,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 41,
+      "polarity_accuracy": 0.8913043478260869,
+      "pair_accuracy": 0.8478260869565217
+    },
+    {
+      "case": "xeL4vcDYjNKVAFJD",
+      "total_images": 43,
+      "karyotype_correct": 22,
+      "karyotype_accuracy": 0.5116279069767442,
+      "polarity_valid_samples": 43,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8837209302325582,
+      "pair_accuracy": 0.7441860465116279
+    },
+    {
+      "case": "xoZ81vk77aJAToVR",
+      "total_images": 46,
+      "karyotype_correct": 33,
+      "karyotype_accuracy": 0.717391304347826,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8260869565217391,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "xp2gTxAfoHyLnGqx",
+      "total_images": 46,
+      "karyotype_correct": 37,
+      "karyotype_accuracy": 0.8043478260869565,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 44,
+      "polarity_accuracy": 0.9565217391304348,
+      "pair_accuracy": 0.7391304347826086
+    },
+    {
+      "case": "xvYfMatHF8PWhd6A",
+      "total_images": 45,
+      "karyotype_correct": 29,
+      "karyotype_accuracy": 0.6444444444444445,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9333333333333333,
+      "pair_accuracy": 0.7111111111111111
+    },
+    {
+      "case": "yXVt13jPCt7hDHPW",
+      "total_images": 46,
+      "karyotype_correct": 26,
+      "karyotype_accuracy": 0.5652173913043478,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "yqjxeTPa9C14t27G",
+      "total_images": 46,
+      "karyotype_correct": 13,
+      "karyotype_accuracy": 0.2826086956521739,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 38,
+      "polarity_accuracy": 0.8260869565217391,
+      "pair_accuracy": 0.6956521739130435
+    },
+    {
+      "case": "z5ADm31rj7W26WSX",
+      "total_images": 46,
+      "karyotype_correct": 13,
+      "karyotype_accuracy": 0.2826086956521739,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 42,
+      "polarity_accuracy": 0.9130434782608695,
+      "pair_accuracy": 0.7391304347826086
+    },
+    {
+      "case": "zMGYL4JnnshY4VfB",
+      "total_images": 45,
+      "karyotype_correct": 34,
+      "karyotype_accuracy": 0.7555555555555555,
+      "polarity_valid_samples": 45,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8666666666666667,
+      "pair_accuracy": 0.7777777777777778
+    },
+    {
+      "case": "zNUX3BjgnF9fNqK8",
+      "total_images": 46,
+      "karyotype_correct": 40,
+      "karyotype_accuracy": 0.8695652173913043,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 43,
+      "polarity_accuracy": 0.9347826086956522,
+      "pair_accuracy": 0.8260869565217391
+    },
+    {
+      "case": "zR61LNNKqvD63szZ",
+      "total_images": 46,
+      "karyotype_correct": 5,
+      "karyotype_accuracy": 0.10869565217391304,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 39,
+      "polarity_accuracy": 0.8478260869565217,
+      "pair_accuracy": 0.5217391304347826
+    },
+    {
+      "case": "zc2VH5QHzQFBjy4H",
+      "total_images": 46,
+      "karyotype_correct": 19,
+      "karyotype_accuracy": 0.41304347826086957,
+      "polarity_valid_samples": 46,
+      "polarity_correct": 40,
+      "polarity_accuracy": 0.8695652173913043,
+      "pair_accuracy": 0.8043478260869565
+    },
+    {
+      "case": "zozvW2UAxBSZAiPL",
+      "total_images": 41,
+      "karyotype_correct": 8,
+      "karyotype_accuracy": 0.1951219512195122,
+      "polarity_valid_samples": 41,
+      "polarity_correct": 36,
+      "polarity_accuracy": 0.8780487804878049,
+      "pair_accuracy": 0.7804878048780488
+    }
+  ]
+}

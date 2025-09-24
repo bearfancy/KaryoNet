@@ -82,8 +82,8 @@ class ResNet(nn.Module):
         self.avgpool = nn.AvgPool2d(7, stride=1)
         self.fc0 = nn.Linear(512 * block.expansion, 256)
         self.fc1 = nn.Linear(256, num_classes)
-        self.fc0_ = nn.Linear(512 * block.expansion, 256)
-        self.fc1_ = nn.Linear(256, 2)
+        self.fc0_ = nn.Linear(512 * block.expansion, 256) # 极性分类的隐藏层
+        self.fc1_ = nn.Linear(256, 4) # 极性分类输出层（4类：0°,90°,180°,270°）
         self.lstm_row = nn.GRU(1, self.hidden_dim, bidirectional=self.bidirect, num_layers=2)
         self.lstm_col = nn.GRU(self.hidden_dim*2, self.hidden_dim, bidirectional=self.bidirect, num_layers=2)
         self.lstm_row2 = nn.GRU(self.hidden_dim*2, self.hidden_dim, bidirectional=self.bidirect, num_layers=2)
@@ -136,8 +136,8 @@ class ResNet(nn.Module):
         x = x.view(x.size(0), -1)
         xc = self.fc0(x)
         xc2 = self.fc1(xc)
-        xp = self.fc0_(x)
-        xp2=self.fc1_(xp)
+        xp = self.fc0_(x) # 通过极性分类隐藏层
+        xp2=self.fc1_(xp) # 通过极性分类输出层，得到2类输出
         xc2 = xc2.unsqueeze(0)
         input_row = xc2.view(1, -1, 1).permute(1, 0, 2).contiguous()
         #print(input_row.shape)

@@ -80,7 +80,7 @@ class ResNet(nn.Module):
         self.fc0 = nn.Linear(512 * block.expansion, 256)
         self.fc1 = nn.Linear(256, num_classes)
         self.fc0_ = nn.Linear(512 * block.expansion, 256)
-        self.fc1_ = nn.Linear(256, 2)
+        self.fc1_ = nn.Linear(256, 4) # 极性分类输出层（4类：0°,90°,180°,270°）
 
         for m in self.modules():
             if isinstance(m, nn.Conv2d):

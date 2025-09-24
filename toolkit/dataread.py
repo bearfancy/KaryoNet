@@ -3,6 +3,11 @@ import os
 def read_data(rootdir,rootdirval):
     """
     读取指定目录下的数据文件列表，用于训练和验证数据的准备。
+    
+    新数据集JBM_G_category_dataset250922的特点：
+    - 训练集：按染色体类型(1-24)分类，同一细胞的同一条染色体有4个极性角度(0,90,180,270)
+    - 验证集：按细胞分类，每个细胞46条染色体，每条染色体只有一个角度
+    - 图片命名：ID_核型_角度_细胞名_Karyotype.jpg
 
     参数:
         rootdir (str): 训练数据根目录路径，该目录下应包含多个子目录（1~24）。
@@ -10,7 +15,7 @@ def read_data(rootdir,rootdirval):
 
     返回:
         tuple: 包含以下元素的元组：
-            - valcasenames (list): 验证目录下的文件名列表。
+            - valcasenames (list): 验证目录下的细胞名列表。
             - list1 (list): 每个训练子目录（1~24）下的文件名列表组成的列表。
             - dirlist (list): 训练子目录名称列表（'1/' 到 '24/'）。
             - normalboy (list): 男孩样本对应的标签映射列表。
